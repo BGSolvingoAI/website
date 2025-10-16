@@ -9,7 +9,7 @@
   <style>
     :root {
       --bg: #1f2a28;
-      --fg: #e7ebc8;
+      --fg: #E2E0C8;
       --muted: #bfc7a0;
       --accent: #d8dfb5;
       --accent-text: #1f2a28;
@@ -31,7 +31,7 @@
       display: flex; align-items: center; justify-content: space-between; gap: 16px;
     }
     .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--fg); text-decoration: none; font-weight: 600; letter-spacing: .3px; }
-    .brand img { height: 36px; width: auto; display: block; }
+    .brand img { height: 100px; width: auto; display: block; } /* enlarged header logo */
     main { display: grid; place-items: center; text-align: center; padding: clamp(32px, 6vw, 80px) clamp(16px, 4vw, 48px); }
     .hero { max-width: 980px; }
     .hero h1 { font-size: clamp(38px, 6vw, 72px); line-height: 1.05; margin: 8px 0 16px; letter-spacing: .2px; }
@@ -61,16 +61,20 @@
 
     <main>
       <section class="hero">
-        <img src="logo.png" alt="solvingo.ai logo" style="max-width: 380px; width: 55%; height: auto; opacity:.95; margin: 0 auto 8px; display:block;" />
+        <img src="logo.png" alt="solvingo.ai logo" style="max-width: 640px; width: 80%; height: auto; opacity:.95; margin: 0 auto 8px; display:block;" />
         <h1>Clarity first. Then solutions.</h1>
         <p>We help teams pinpoint the real problem, map the path forward, and use AI where it actually moves the needle. Simple, practical, outcome-focused.</p>
-        <a class="cta" href="https://calendar.app.google/bUBWN3HS9Bwdn7qt9" target="_blank" rel="noopener">Book a 30-minute intro</a>
+        <a class="cta" href="https://calendar.app.google/bUBWN3HS9Bwdn7qt9" target="_blank" rel="noopener">Book a 30-Minute Intro</a>
       </section>
     </main>
 
     <footer>
       <div>© <span id="y"></span> Solvingo.ai</div>
-      <div><a href="#">Privacy</a> &nbsp;•&nbsp; <a href="#">Contact</a></div>
+      <div>
+        <a href="#">Privacy</a>
+        &nbsp;•&nbsp;
+        <a href="#">Contact</a>
+      </div>
     </footer>
   </div>
   <script>
