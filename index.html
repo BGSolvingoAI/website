@@ -4,81 +4,94 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>solvingo.ai</title>
-  <meta name="description" content="Solvingo.ai - practical, AI-assisted problem solving for growing businesses." />
+  <meta name="description" content="Simple, practical AI consulting focused on solving the right problem first." />
   <meta name="theme-color" content="#1f2a28" />
   <style>
     :root {
-      --bg: #262e2c;
-      --fg: #E2E0C8;
-      --muted: #bfc7a0;
+      --bg: #1f2a28;
+      --fg: #e6e6d6;
+      --muted: #b6bfb4;
       --accent: #d8dfb5;
       --accent-text: #1f2a28;
-      --accent-hover: #e7ebc8;
-      --ring: #e7ebc84d;
     }
     * { box-sizing: border-box; }
-    html, body { height: 100%; }
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: var(--bg);
       color: var(--fg);
-      background: radial-gradient(1200px 800px at 50% -10%, #25322f, var(--bg));
       line-height: 1.5;
+      display: grid;
+      place-items: center;
+      text-align: center;
     }
-    .wrap { min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; }
+    .container {
+      max-width: 720px;
+      padding: 48px 20px;
+    }
     header {
-      padding: 20px clamp(16px, 4vw, 48px);
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      margin-bottom: 64px;
     }
-    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--fg); text-decoration: none; font-weight: 600; letter-spacing: .3px; }
-    .brand img { height: 100px; width: auto; display: block; } /* enlarged header logo */
-    main { display: grid; place-items: center; text-align: center; padding: clamp(32px, 6vw, 80px) clamp(16px, 4vw, 48px); }
-    .hero { max-width: 980px; }
-    .hero h1 { font-size: clamp(38px, 6vw, 72px); line-height: 1.05; margin: 8px 0 16px; letter-spacing: .2px; }
-    .hero p { font-size: clamp(16px, 2.4vw, 22px); color: var(--muted); margin: 0 auto 28px; max-width: 780px; }
-    .cta {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-      padding: 14px 22px; border-radius: 999px; background: var(--accent); color: var(--accent-text);
-      font-weight: 700; text-decoration: none; transition: transform .08s ease, background .2s ease, box-shadow .2s ease;
-      box-shadow: 0 6px 24px rgba(0,0,0,.25); border: 1px solid #cfd7ae;
+    header img {
+      max-width: 240px;
+      width: 60%;
+      height: auto;
+      margin-bottom: 12px;
     }
-    .cta:hover { transform: translateY(-1px); background: var(--accent-hover); }
-    .cta:focus-visible { outline: none; box-shadow: 0 0 0 6px var(--ring); }
-    .pill { display: inline-block; font-size: 14px; padding: 6px 12px; border: 1px solid #2b3936; border-radius: 999px; background: #1a2423; color: var(--muted); }
-    footer { padding: 20px clamp(16px, 4vw, 48px); color: #aab398; font-size: 14px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-    footer a { color: #c9d2b1; text-decoration: none; } footer a:hover { text-decoration: underline; }
+    header div {
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      line-height: 1.1;
+      margin: 0 0 20px;
+    }
+    p {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0 0 40px;
+    }
+    a.cta {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--accent-text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 80px;
+      font-size: 14px;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <main class="container">
     <header>
-      <a class="brand" href="#" aria-label="solvingo.ai home">
-        <img src="logo.png" alt="solvingo.ai logo" />
-        <span>solvingo.ai</span>
-      </a>
-      <span class="pill">AI-assisted problem solving</span>
+      <img src="logo.png" alt="solvingo.ai logo" />
     </header>
 
-    <main>
-      <section class="hero">
-        <img src="logo.png" alt="solvingo.ai logo" style="max-width: 640px; width: 80%; height: auto; opacity:.95; margin: 0 auto 8px; display:block;" />
-        <h1>Solve the right problems first</h1>
-        <p>We help teams identify the real problem, decide what actually matters, and apply AI only where it delivers real results.</p>
-        <a class="cta" href="https://calendar.app.google/bUBWN3HS9Bwdn7qt9" target="_blank" rel="noopener">Book a 30-Minute Intro</a>
-      </section>
-    </main>
+    <h1>Solve the right problem first</h1>
+    <p>
+      We help teams slow down just enough to understand the real problem,
+      then use AI only where it creates clear, practical value.
+    </p>
+
+    <a class="cta" href="https://calendar.app.google/bUBWN3HS9Bwdn7qt9" target="_blank" rel="noopener">
+      Book a 30 minute intro
+    </a>
 
     <footer>
-      <div>© <span id="y"></span> Solvingo.ai</div>
-      <div>
-        <a href="#">Privacy</a>
-        &nbsp;•&nbsp;
-        <a href="#">Contact</a>
-      </div>
+      © <span id="year"></span> Solvingo.ai
     </footer>
-  </div>
+  </main>
+
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
